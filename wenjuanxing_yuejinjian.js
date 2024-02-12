@@ -8,7 +8,6 @@
 // @icon         https://gitee.com/yuejinjianke/tuchuang/raw/master/image/image-20240212215352949.png
 // @license      MIT
 // @grant        none
-// @namespace    https://github.com/jiankeguyue/wenjuanxing_nomorehouseandcow
 // @homepageURL  https://github.com/jiankeguyue/wenjuanxing_nomorehouseandcow
 // ==/UserScript==
 
@@ -78,7 +77,7 @@
             }
 
             case '下拉': {
-                clickList[i].children[0].children[0].children[single(1 + answerList[i].ratio)].selected = true
+                clickList[i].children[0].children[0].value = String(1 + single(answerList[i].ratio))
                 break
             }
 
