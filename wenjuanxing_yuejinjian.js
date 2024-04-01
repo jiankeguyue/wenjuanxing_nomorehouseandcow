@@ -66,14 +66,10 @@
             }
 
             case '多选': {
-                let num = 0
-                while (num < 2) {
-                    for (let j = 0; j < answerList[i].ratio.length; j++) {
-                        clickList[i].children[multi(answerList[i].ratio)].click()
-                        num++
-                    }
-                }
-                break
+                 for (let j = 0; j < 3; j++) {
+                    clickList[i].children[multi(answerList[i].ratio)].click()
+                    num++
+                 }
             }
 
             case '下拉': {
